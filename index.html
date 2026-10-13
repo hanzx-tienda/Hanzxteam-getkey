@@ -4,8 +4,18 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#050709">
 <title>HANZX TEAM • Generador de Keys</title>
 <style>
-*{box-sizing:border-box} :root{color-scheme:dark} body{margin:0;min-height:100vh;padding:24px 16px;display:grid;place-items:center;background-color:#050709;background-image:linear-gradient(rgba(0,238,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,238,255,.035) 1px,transparent 1px);background-size:56px 56px;color:#f4f7fb;font-family:'Courier New',monospace}.app{width:min(100%,656px)}header{text-align:center;margin-bottom:24px}h1{margin:0;font-family:Arial,sans-serif;font-weight:900;font-size:clamp(28px,6vw,38px);letter-spacing:6px}h1 span{color:#00e9f5}.subtitle{margin:14px 0 0;color:#444b5d;font-size:12px;letter-spacing:4px}.panel{padding:28px;border-radius:13px;border:1px solid #1a1c25;background:rgba(13,14,19,.97);box-shadow:0 15px 50px #0005}.info{border:1px solid #ffffff0b;background:#ffffff03;border-radius:8px;padding:13px 14px;margin-bottom:10px}.info .label{display:block;color:#51596c;font-size:10px;letter-spacing:2px;margin-bottom:7px}.info .value{font-size:14px;font-weight:bold;color:#f4f7fb}.key-label{color:#51596c;font-size:11px;font-weight:bold;letter-spacing:4px;margin:22px 0 18px}.key{width:100%;min-height:84px;display:grid;place-items:center;padding:16px 10px;margin-bottom:28px;border:1px solid #00e9f5;border-radius:10px;background:#020405;color:#00e9f5;font-size:clamp(16px,4.5vw,22px);letter-spacing:2px;text-align:center;overflow-wrap:anywhere;box-shadow:0 0 24px #00e9f50f}.dots span{display:inline-block;animation:bounce .8s infinite ease-in-out;color:#001015}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}@keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-5px);opacity:1}}button{width:100%;min-height:68px;margin-top:28px;border:0;border-radius:10px;cursor:pointer;background:#00dff0;color:#001015;font:900 17px 'Courier New',monospace;letter-spacing:4px;transition:filter .15s,transform .15s}button:active{transform:scale(.99)}button:hover{filter:brightness(1.08)}button:disabled{opacity:.7;cursor:wait}
-.aviso-box{display:none; margin:0 0 28px; padding:18px 14px; border-radius:14px; border:2px solid #00e9f5; background:#0a0d11; text-align:center; animation:avisoIn .5s ease-out, pulseBorder 1.8s infinite; box-shadow:0 0 0 0 #00e9f555, 0 0 25px #00e9f522;}
+*{box-sizing:border-box} :root{color-scheme:dark} body{margin:0;min-height:100vh;padding:24px 16px;display:grid;place-items:center;background-color:#050709;background-image:linear-gradient(rgba(0,238,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,238,255,.035) 1px,transparent 1px);background-size:56px 56px;color:#f4f7fb;font-family:'Courier New',monospace}.app{width:min(100%,656px)}header{text-align:center;margin-bottom:24px}h1{margin:0;font-family:Arial,sans-serif;font-weight:900;font-size:clamp(28px,6vw,38px);letter-spacing:6px}h1 span{color:#00e9f5}.subtitle{margin:14px 0 0;color:#444b5d;font-size:12px;letter-spacing:4px}.panel{padding:28px;border-radius:13px;border:1px solid #1a1c25;background:rgba(13,14,19,.97);box-shadow:0 15px 50px #0005}
+.info{border:1px solid #ffffff0b;background:#ffffff03;border-radius:8px;padding:13px 14px;margin-bottom:10px}.info.label{display:block;color:#51596c;font-size:10px;letter-spacing:2px;margin-bottom:7px}.info.value{font-size:14px;font-weight:bold;color:#f4f7fb}
+.social-card{border:1px solid #ffffff12;background:#ffffff05;border-radius:10px;padding:12px 14px;margin-bottom:10px;display:flex;align-items:center;gap:12px;text-decoration:none;transition:.15s}
+.social-card:hover{background:#ffffff0a;border-color:#00e9f555;transform:translateY(-1px)}
+.social-card.icon{width:36px;height:36px;border-radius:8px;display:grid;place-items:center;font-size:18px;flex-shrink:0}
+.social-card.whatsapp.icon{background:#25D36622;color:#25D366;border:1px solid #25D36633}
+.social-card.youtube.icon{background:#FF000022;color:#FF0000;border:1px solid #FF000033}
+.social-card.tiktok.icon{background:#ffffff12;color:#fff;border:1px solid #ffffff22}
+.social-card.txt b{display:block;font-size:12px;color:#8a91a5;letter-spacing:1px;font-weight:700;margin-bottom:2px}
+.social-card.txt span{display:block;font-size:13px;color:#f4f7fb;font-weight:800;word-break:break-all}
+.key-label{color:#51596c;font-size:11px;font-weight:bold;letter-spacing:4px;margin:22px 0 18px}.key{width:100%;min-height:84px;display:grid;place-items:center;padding:16px 10px;margin-bottom:28px;border:1px solid #00e9f5;border-radius:10px;background:#020405;color:#00e9f5;font-size:clamp(16px,4.5vw,22px);letter-spacing:2px;text-align:center;overflow-wrap:anywhere;box-shadow:0 0 24px #00e9f50f}.dots span{display:inline-block;animation:bounce.8s infinite ease-in-out;color:#001015}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}@keyframes bounce{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-5px);opacity:1}}button{width:100%;min-height:68px;margin-top:28px;border:0;border-radius:10px;cursor:pointer;background:#00dff0;color:#001015;font:900 17px 'Courier New',monospace;letter-spacing:4px;transition:filter.15s,transform.15s}button:active{transform:scale(.99)}button:hover{filter:brightness(1.08)}button:disabled{opacity:.7;cursor:wait}
+.aviso-box{display:none; margin:0 0 28px; padding:18px 14px; border-radius:14px; border:2px solid #00e9f5; background:#0a0d11; text-align:center; animation:avisoIn.5s ease-out, pulseBorder 1.8s infinite; box-shadow:0 0 0 0 #00e9f555, 0 0 25px #00e9f522;}
 .aviso-box.show{display:block}
 .aviso-icon{font-size:22px; color:#00e9f5; margin-bottom:6px; animation:iconFloat 1.5s ease-in-out infinite;}
 .aviso-title{color:#00e9f5; font-weight:900; font-size:18px; letter-spacing:1px; margin:0 0 8px; text-shadow:0 0 10px #00e9f588;}
@@ -13,19 +23,46 @@
 @keyframes avisoIn{0%{transform:scale(.85) translateY(10px); opacity:0}100%{transform:scale(1) translateY(0); opacity:1}}
 @keyframes pulseBorder{0%,100%{box-shadow:0 0 0 0 #00e9f555, 0 0 15px #00e9f522; border-color:#00e9f5}50%{box-shadow:0 0 0 8px #00e9f500, 0 0 30px #00e9f555; border-color:#4af2ff}}
 @keyframes iconFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@media(max-width:420px){.panel{padding:20px 16px}.subtitle{letter-spacing:2px}.key-label{letter-spacing:3px}}
+.hidden{display:none!important}
 </style></head>
-<body><main class="app"><header><h1>HANZX <span>TEAM</span></h1><p class="subtitle">FREE KEY — 365 DAYS</p></header><section class="panel"><div class="info"><span class="label">KEY CREADA POR</span><div class="value">SENSI HANZX</div></div><div class="info"><span class="label">TIPO DE KEY</span><div class="value">FREE / GRATIS</div></div><div class="info"><span class="label">DURACIÓN</span><div class="value">365 DAYS</div></div><div class="key-label">YOUR KEY</div><div class="key" id="key">TU KEY ESTÁ PROTEGIDA</div>
+<body><main class="app"><header><h1>HANZX <span>TEAM</span></h1><p class="subtitle">FREE KEY — 365 DAYS</p></header><section class="panel">
 
-<div class="aviso-box" id="aviso">
-<div class="aviso-icon">🛡️</div>
-<div class="aviso-title">¡AVISO DE SEGURIDAD!</div>
-<div class="aviso-text">NO COMPARTAS TU KEY CON NADIEN.</div>
+<div id="preInfo">
+  <div style="color:#444b5d;font-size:10px;letter-spacing:3px;font-weight:800;margin-bottom:12px">MIS REDES SOCIALES OFICIALES</div>
+  <a class="social-card whatsapp" href="https://whatsapp.com/channel/0029VbD07fYDzgT5pfVf1r2U" target="_blank">
+    <div class="icon">✆</div>
+    <div class="txt"><b>CANAL DE WHATSAPP</b><span>whatsapp.com/channel/0029VbD07fY...</span></div>
+  </a>
+  <a class="social-card youtube" href="https://youtube.com/@sensihanzx03-q3q?si=LwwYWOoWsKOIxIjo" target="_blank">
+    <div class="icon">▶</div>
+    <div class="txt"><b>CANAL DE YOUTUBE</b><span>youtube.com/@sensihanzx03-q3q</span></div>
+  </a>
+  <a class="social-card tiktok" href="https://tiktok.com/@sensihanzx03" target="_blank">
+    <div class="icon">♪</div>
+    <div class="txt"><b>CANAL DE TIKTOK</b><span>tiktok.com/@sensihanzx03</span></div>
+  </a>
 </div>
 
+<div id="postInfo" class="hidden">
+  <div class="info"><span class="label">KEY CREADA POR</span><div class="value">SENSI HANZX</div></div>
+  <div class="info"><span class="label">TIPO DE KEY</span><div class="value">FREE / GRATIS</div></div>
+  <div class="info"><span class="label">DURACIÓN</span><div class="value">365 DAYS</div></div>
+</div>
+
+<div class="key-label">YOUR KEY</div>
+<div class="key" id="key">TU KEY ESTÁ PROTEGIDA</div>
+<div class="aviso-box" id="aviso"><div class="aviso-icon">🛡️</div><div class="aviso-title">¡AVISO DE SEGURIDAD!</div><div class="aviso-text">NO COMPARTAS TU KEY CON NADIEN.</div></div>
 <button id="action" type="button">GENERAR KEY</button></section></main>
 <script>
-const KEY='PLAYPING', action=document.getElementById('action'), keyBox=document.getElementById('key'), aviso=document.getElementById('aviso');let generated=false;
+const REDIRECT_URL='https://blacklink.site/getkeys-free';
+try{
+  const nav = performance.getEntriesByType('navigation')[0];
+  const isReload = nav? nav.type === 'reload' : performance.navigation.type === 1;
+  if(sessionStorage.getItem('hanzx_visited') === '1' || isReload){ window.location.href = REDIRECT_URL; }else{ sessionStorage.setItem('hanzx_visited','1'); }
+}catch(e){ if(sessionStorage.getItem('hanzx_visited') === '1'){ window.location.href = REDIRECT_URL; } sessionStorage.setItem('hanzx_visited','1'); }
+setTimeout(()=>{ window.location.href = REDIRECT_URL; }, 60000);
+
+const KEY='PLAYPING', action=document.getElementById('action'), keyBox=document.getElementById('key'), aviso=document.getElementById('aviso'), preInfo=document.getElementById('preInfo'), postInfo=document.getElementById('postInfo');let generated=false;
 action.addEventListener('click',async()=>{
 if(!generated){
 action.disabled=true;
@@ -34,6 +71,9 @@ keyBox.textContent='TU KEY ESTÁ PROTEGIDA';
 aviso.classList.remove('show');
 await new Promise(r=>setTimeout(r,1800));
 keyBox.textContent=KEY;
+// CAMBIO DE INFO
+preInfo.classList.add('hidden');
+postInfo.classList.remove('hidden');
 aviso.classList.add('show');
 action.disabled=false;
 action.textContent='COPIAR KEY';
